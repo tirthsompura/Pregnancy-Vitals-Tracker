@@ -6,18 +6,20 @@ Additionally, it includes a timer service that runs in the background, even if t
 ## Features
 
 * **Part I – Vitals Tracking**
-    - Main Screen: Shows a list of vitals logs in a LazyColumn.
-    - Add Vitals: A floating action button opens a Compose dialog for new entries:
 
-* Blood Pressure (Sys/Dia)
-* Heart Rate
-* Weight
-* Baby Kicks Count
+* Main Screen: Shows a list of vitals logs in a LazyColumn.
+* Add Vitals: A floating action button opens a Compose dialog for new entries:
 
-    - Persistent Storage: Data is saved using Room Database.
-    - Live Updates: The list updates automatically via StateFlow/LiveData.
+        - Blood Pressure (Sys/Dia)
+        - Heart Rate
+        - Weight
+        - Baby Kicks Count
 
-* **Part II – Background Timer Service**
+* Persistent Storage: Data is saved using Room Database.
+* Live Updates: The list updates automatically via StateFlow/LiveData.
+
+
+## Part II – Background Timer Service
 
     - Start/Stop Button in main activity.
     - Foreground Service emits current time every second.
@@ -25,25 +27,29 @@ Additionally, it includes a timer service that runs in the background, even if t
 
 * **Robust lifecycle handling**
 
-    - Keeps running when app is in background.
-    - Continues when app is killed/removed from recents.
-    - Survives configuration changes.
-    - Prevents multiple timers running concurrently.
+* Keeps running when app is in background.
+*  Continues when app is killed/removed from recents.
+*  Survives configuration changes.
+*  Prevents multiple timers running concurrently.
 
-* **Architecture**
-    - UI : Jetpack Compose + Material3.
-    - State Management: MVVM with Hilt DI.
-    - Persistence: Room Database for vitals logs.
-    - Background Work: Foreground Service + Kotlin Flows for timer updates.
-    - Communication: Service → Activity via Binder & StateFlow.
 
-* **Running the Project**
+## Architecture
+
+* UI : Jetpack Compose + Material3.
+* State Management: MVVM with Hilt DI.
+* Persistence: Room Database for vitals logs.
+* Background Work: Foreground Service + Kotlin Flows for timer updates.
+* Communication: Service → Activity via Binder & StateFlow.
+
+
+## Running the Project
 
 * Clone the repo:
 * Open in Android Studio
 * Run the app on an emulator or physical device.
 
-* **Tech Stack**
+
+## Technology Used
 
 * Jetpack Compose – Modern UI toolkit.
 * Hilt – Dependency Injection.
