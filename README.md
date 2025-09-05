@@ -5,15 +5,15 @@ Additionally, it includes a timer service that runs in the background, even if t
 
 ## Features
 
-* **Part I – Vitals Tracking**
+## Part I – Vitals Tracking
 
 * Main Screen: Shows a list of vitals logs in a LazyColumn.
 * Add Vitals: A floating action button opens a Compose dialog for new entries:
 
-        - Blood Pressure (Sys/Dia)
-        - Heart Rate
-        - Weight
-        - Baby Kicks Count
+  - Blood Pressure (Sys/Dia)
+  - Heart Rate
+  - Weight
+  - Baby Kicks Count
 
 * Persistent Storage: Data is saved using Room Database.
 * Live Updates: The list updates automatically via StateFlow/LiveData.
@@ -21,9 +21,9 @@ Additionally, it includes a timer service that runs in the background, even if t
 
 ## Part II – Background Timer Service
 
-    - Start/Stop Button in main activity.
-    - Foreground Service emits current time every second.
-    - Time is delivered via Flow/communication channel (no static variables).
+  - Start/Stop Button in main activity.
+  - Foreground Service emits current time every second.
+  - Time is delivered via Flow/communication channel (no static variables).
 
 * **Robust lifecycle handling**
 
