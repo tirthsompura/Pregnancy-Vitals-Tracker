@@ -27,10 +27,10 @@ Additionally, it includes a timer service that runs in the background, even if t
 
 * **Robust lifecycle handling**
 
-* Keeps running when app is in background.
-*  Continues when app is killed/removed from recents.
-*  Survives configuration changes.
-*  Prevents multiple timers running concurrently.
+  -  Keeps running when app is in background.
+  -  Continues when app is killed/removed from recents.
+  -  Survives configuration changes.
+  -  Prevents multiple timers running concurrently.
 
 
 ## Architecture
