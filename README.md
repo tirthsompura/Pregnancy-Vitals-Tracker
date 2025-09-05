@@ -3,7 +3,11 @@ A Jetpack Compose + MVVM Android app for pregnancy health tracking.
 It allows users to log vitals (blood pressure, heart rate, weight, baby kicks) and track them in real time.
 Additionally, it includes a timer service that runs in the background, even if the app is killed, and continuously updates the UI.
 
+<img src="" width="210" height="450">
 <img src="https://github.com/user-attachments/assets/0cc27659-36d6-4f5b-909d-e9cd48409d6c" width="210" height="450">
+<img src="" width="210" height="450">
+
+
 
 ## Features
 
@@ -58,6 +62,3 @@ Additionally, it includes a timer service that runs in the background, even if t
 * Room – Local database.
 * StateFlow / LiveData – Reactive UI updates.
 * Foreground Service – Persistent background execution.
-
-
-<img width="720" height="1650" alt="Screenshot_20250906_040328" src=" />
