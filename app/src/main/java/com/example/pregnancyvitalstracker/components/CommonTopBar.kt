@@ -21,11 +21,11 @@ fun CommonTopBar(modifier: Modifier, title: String) {
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .height(66.dp)
+            .height(46.dp)
             .background(lightPurple)
-            .padding(start = 10.dp, bottom = 12.dp),
+            .padding(start = 10.dp),
         horizontalArrangement = Arrangement.Start,
-        verticalAlignment = Alignment.Bottom
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
             text = title,
